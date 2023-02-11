@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FI FO</title>
+</head>
+<body>
+    <button id="fade-in">Fade In</button>       
+    <button id="fade-out">Fade Out</button>
+    <img src="source/hehe.png" alt="hopper">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $('#fade-in').click(function(){
+            $('img').fadeIn('fast');
+        });
+        
+        $('#fade-out').click(function(){
+            $('img').fadeOut(400);
+        });
+        
+        $('#toggle-fading').click(function(){
+            $('img').fadeToggle('slow');
+        });
+    </script>
+</body>
+</html>

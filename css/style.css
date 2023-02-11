@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #FFF8F0;
+}
+
+
+.navbar .navbar-collapse {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 175%;
+}
+
+.navbar-dark .navbar-brand {
+    color: #FFF8F0;
+}
+
+
+
+.nav-item {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    vertical-align: middle;
+}
+
+.nav-item .btn {
+    border-color: #5825E6;
+    width: 10rem;
+}
+
+.nav-item .btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+.btn-outline-success {
+    color: #5825E6;
+    border-color: #5825E6;
+}
+
+.btn-outline-success:hover {
+    background-color: #5825E6;
+    border-color: #5825E6;
+}
+
+.nav-item .btn-primary {
+    background-color: #5825E6;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.search-filter {
+    background-color: #E64225;
+    width: 100%;
+}
+
+.search-filter-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 1rem 4rem 1rem;
+}
+
+.search-filter-container h1 {
+    text-align: center;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+.form-inline .btn {
+    color: #FFF8F0;
+    background-color: #5825E6;
+}
+
+.form-inline .btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+.form-inline label {
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #FFF8F0;
+  border: 1px solid #212529;
+}
+
+
+.page-title {
+    width: 70%;
+    margin: 1rem auto 0.5rem auto;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.content .content-container .content-item .card .btn {
+    background-color: #5825E6;
+    border-color: #5825E6;
+}
+
+.content .content-container .content-item .card .btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+.page-content {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+}
+
+.content-wakacje .filter-items label {
+    display: flex;
+}
+
+.content-wakacje .filter-3 label {
+    display: inline;
+}
+
+.content-wakacje .filter-3 input {
+    width: 4rem;
+    height: 2.5rem;
+}
+
+.content-wakacje .filter-3 input::placeholder {
+    color: #a0a0a0;
+}
+.content-wakacje .filter-items input {
+    margin: 0.4rem;
+}
+
+
+.page-content h2 {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.content-wakacje h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.filters {
+    width: 22%;
+}
+
+.content-wakacje .cards .card {
+    margin: 2rem 4rem;
+}
+
+.content-wakacje .cards .card .card-title {
+    color: #212529;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content-wakacje .cards .card .card-title:hover {
+    text-decoration: underline;
+    text-decoration-skip: spaces;
+}
+
+.content-wakacje .cards .card img:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-out;
+}
+
+.content-wakacje .cards .card-body {
+    position: relative;
+}
+
+.content-wakacje .cards .card .price {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.content-wakacje .cards .card .price1 {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.content-wakacje .cards .card .price2 {
+    font-size: 80%;
+    color: black;
+}
+
+.kierunek-content .kierunek-img {
+    width: 70%;
+    margin: auto;
+}
+
+.kierunek-content .kierunek-img img {
+    margin: 1rem 0 3rem 0;
+}
+
+.kierunek-content .kierunek-info .btn {
+    background-color: #5825E6;
+    border-color: #5825E6;
+    margin: 2rem 0;
+}
+
+.kierunek-content .kierunek-info .btn:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-out;
+}
+
+.kontakt-content input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.kontakt-content input[type=submit] {
+  background-color: #5825E6;
+  color: #fff8f0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.kontakt-content input[type=submit]:hover {
+  transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+/* Add a background color and some padding around the form */
+.kontakt-content {
+  border-radius: 5px;
+  background-color: #a0a0a0;
+  padding: 20px;
+}
+
+.rezerwacje-info {
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;
+}
+
+
+.footer-container {
+    background-color: #212529;
+    padding-bottom: 4rem;
+}
+
+.footer {
+    width: 80%;
+    height: 40vh;
+    background-color: #212529;
+    color: #FFF8F0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-nav-table-element {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-nav-table-element h1 {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.footer-nav-table-element a {
+    color: #FFF8F0;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.footer-nav-table-element a:hover {
+    color: #5825E6;
+    transition: 0.2s ease-out;
+}
+
+.footer-nav-table-element span {
+    color: #FFF8F0;
+    text-decoration: none;
+    margin: 0.2rem;
+}
+
+.footer-nav-table-element .btn-group {
+    margin-top: 0.5rem;
+}
+
+.footer-nav-table-element .btn {
+    margin: 0;
+    font-size: 12px;
+    background-color: #5825E6;
+    border-color: #5825E6;
+}
+
+.footer-nav-table-element .btn:hover {
+    padding: 16px;
+    color: #FFF8F0;
+    transition: 0.2s ease-out;
+}
+
+.email-container {
+    width: 100%;
+    height: 16rem;
+    background-color: #E64225;
+}
+
+.email-all-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 3rem; 
+}
+
+.email-all-form h1, .email-all-form p {
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.email-all-form .email-area .modal .btn {
+    background-color: #5825E6;
+}
+
+#email-form {
+    width: 350px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#email-form::placeholder {
+    color: #a0a0a0;
+}
+
+#email-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #5825E6;
+    color: #FFF8F0;
+}
+
+#carouselExampleDark {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.content {
+    width: 65%;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.content-container {
+    margin-bottom: 2rem;
+}
+
+.content-container .row {
+    margin: 0 auto;
+}
+
+.content-item .card img:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+.logowanie-container {
+  position: relative;
+  background-color: #fff8f0;
+  padding: 20px 0 30px 0;
+    margin: 0 auto;
+}
+
+/* style inputs and link buttons */
+.logowanie-container input, .logowanie-container .btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.logowanie-container input:hover, .btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.logowanie-container .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.logowanie-container .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.logowanie-container .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+.logowanie-container input[type=submit] {
+  background-color: #5825E6;
+  color: white;
+  cursor: pointer;
+}
+
+.logowanie-container input[type=submit]:hover {
+  transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+/* Two-column layout */
+.logowanie-container .col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.logowanie-container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.logowanie-container .vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.logowanie-container .inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff8f0;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.logowanie-container .hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.logowanie-bottom-container {
+  text-align: center;
+  background-color: #fff8f0;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.logowanie-container {
+    border: none;
+}
+
+.logowanie-container .help-links {
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem;
+}
+
+
+.signup-container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+.signup-container input[type=text], .signup-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.signup-container input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+.signup-container hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.signup-container .registerbtn {
+  background-color: #5825E6;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signup-container .registerbtn:hover {
+  opacity:1;
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signup-container .signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.signup-content form {
+    margin: 0 auto;
+}
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .logowanie-container .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .logowanie-container .vl {
+    display: none;
+  }
+  
+  .logowanie-container .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+    .footer {
+        height: 150vh;
+    }
+    .email-container {
+        height: 30rem;
+    }
+}
